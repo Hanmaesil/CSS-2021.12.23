@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        background-color: red;
+        /* display로 속성을 바꿀 수 있다. */
+        display: inline;
+      }
+      span {
+        background-color: green;
+        display: block;
+      }
+      p,
+      span {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        공간분할태그(<div>,<p>,<span>)
+        1. div : 가장 큰 공간
+        2. p : 중간 공간
+        3. span : 세부적인 공간
+     -->
+    <!-- 
+         가시속성(display) : 요소가 화면에 보이는 방식 지정
+         1. block : block 형식으로 지정 -> 웹페이지의 가로공간을 모두 차지하는 속성(div,p태그) -> 3글자만 써도 한줄을 다 잡아먹는다! ->>>>가로공간 내가 지정 가능!!(width로가능), height도 가능!
+         2. inline : inline 형식으로 지정 -> 컨텐츠(내용)이 끝나는 지점까지 너비를 가진다(span태그) -> 3글자 쓰면 딱 거기까지만 잡아먹는다! ->>>> 따로 너비를 설정해줄 수 없다!!!(width,height안됨!)
+         , 단! 공간이 허용되면 옆에 다른 태그들을 배치할 수 있다.
+         3. none : 화면에 보이지 않게 지정
+      -->
+
+    <!-- block -->
+    <p>P태그</p>
+    <p>P태그</p>
+    <p>P태그</p>
+    <!-- inline -->
+    <span>span태그</span>
+    <span>span태그 </span>
+    <span>span태그 </span>
+  </body>
+</html>

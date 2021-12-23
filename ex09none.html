@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .Answer {
+        display: none;
+      }
+      .Question:hover + .Answer {
+        /* question에 마우스를 올리면 answer를 ~~ 하겠다! */
+        display: inline;
+        color: blue;
+      }
+
+      .adr {
+        display: none;
+      }
+
+      .go:hover + .adr {
+        display: inline;
+        color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="Question">Q. 오늘은 무슨 요일인가요???</span>
+    <span class="Answer">A. 목요일 입니다......</span>
+
+    <br /><br />
+
+    <span class="Question">Q. 내가 좋아하는 커피는?</span>
+    <span class="Answer">A. 아이스아메리카노!!</span>
+
+    <br /><br />
+    <!-- a태그 '네이버' 
+        클릭했을 때, 네이버로 이동 
+        마우스를 올렸을때는 www.naver.com 이라는 글자가 뜨도록 
+    -->
+
+    <a href="https://www.naver.com" class="go">네이버</a>
+
+    <span class="adr">
+      <br />
+      "https://www.naver.com"
+    </span>
+
+    <br />
+
+    <a href="https://www.daum.net/" class="go">다음</a>
+    <span class="adr">
+      <br />
+      "https://www.daum.net/"</span
+    >
+  </body>
+</html>

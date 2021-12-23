@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+         반응 선택자 : 사용자의 반응으로 생성되는 특정한 상태를 선택( ' : ' 콜론이 무조건 들어간다!!)
+        1. :active = 마우스로 클릭할 때 선택
+        2. :hover = 마우스를 올린 태그를 선택
+        ***아래로 내려갈수록 힘이 쎄다! ->>> hover와 active를 같이 쓸때는 hover를 먼저 사용해야 한다.
+        */
+      div:hover {
+        color: yellow;
+      }
+      div:active {
+        color: red;
+      }
+      div {
+        font-size: 2em;
+      }
+
+      .hello:hover {
+        color: red;
+        font-size: 1rem;
+        /* rem 은 브라우저에서 html 브라우저 내에서 바꾼뒤에 사용해야한다.(설정 안하면 16px) */
+      }
+      .hello:active {
+        color: blue;
+        font-size: 50px;
+      }
+      /* body {
+        font-size: 100px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div>교실 내에서 꼭! 꼬옥!! 마스크를 써주세요</div>
+
+    <div class="hello">안녕하세요~ 메리크리스마스 입니다!!</div>
+  </body>
+</html>

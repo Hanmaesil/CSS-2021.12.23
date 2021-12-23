@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    /* 
+    그룹 선택자 : ,(콤마)로 표시한다
+    */
+    h1,p,li{
+        color: blue;
+    }
+    /* font-size : 글자 크기를 상대적인 크기단위로 지정 (em, rem) */
+    #px{
+        font-size: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    #em{
+        font-size: 3em;
+    }
+    #rem{
+        /* rem의 기준 : html의 태그 폰트 크기
+        별다른 설정이 없다면 기본값은 16px */
+        font-size: 2rem;
+    }
+    /* html{
+        font-size: 30px;
+    } */
+    </style>
+</head>
+<body>
+    <div>
+        <strong>연수생 수칙</strong>
+        <ol>
+          <li>지각하지 않기</li>
+          <li>결석하지 않기</li>
+          <span>(풀가피 할 땐 꼭 담당연구원에게 미리 말하기)</span>
+          <li>복습하기</li>
+        </ol>
+    <div>
+    
+        <h1>캠퍼스 F수업</h1>
+        <P>녹화 꼭 해주세요!</P>
+        <il>
+            <li>오전 : 임보미</li>
+            <li>오후 : 선영표</li>
+        </il>
+<hr><hr>
+<!-- span#px 단축키(span태그의 아이디를 px로 할거야!) -->
+<span id="px">픽셀로 조정</span> 
+<!-- p>span#em 단축키(p태그안에 span태그를 만드는데 id를 em으로 할거야!) -->
+<p><span id="em">em으로 조정</span></p>
+<span id="rem">rem으로 조정</span>
+</body>
+</html>
